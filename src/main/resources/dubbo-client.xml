@@ -9,9 +9,9 @@
 <!--     提供方信息-->
      <dubbo:application name="zdb-client"  owner="zdb"/>
 <!--    注册中心-->
-     <dubbo:registry address="N/A"></dubbo:registry>
+     <dubbo:registry address="zookeeper://10.7.90.199:2181"></dubbo:registry>
     <dubbo:protocol name="dubbo" port="20880" ></dubbo:protocol>
-    <dubbo:reference  id="iHelloService" interface="demo.dubbo.api.IHelloService" url="dubbo://10.11.206.12:20880/demo.dubbo.api.IHelloService"/>
+    <dubbo:reference  id="iHelloService" interface="demo.dubbo.api.IHelloService"/>
 
 
 
