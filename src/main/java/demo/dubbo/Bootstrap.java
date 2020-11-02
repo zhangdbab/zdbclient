@@ -16,6 +16,9 @@ public class Bootstrap {
 //        iHelloService.helle("zdb");
         System.out.println(iHelloService.helle("zdb"));
 
+         System.in.read();
+
+
     }
 
 }
