@@ -13,7 +13,8 @@
     <dubbo:protocol name="dubbo" port="20880" ></dubbo:protocol>
     <dubbo:protocol name="hessian" port="8088" ></dubbo:protocol>
 
-    <dubbo:reference  id="iHelloService" interface="demo.dubbo.api.IHelloService" protocol="dubbo" check="false" version="1.0.0" cluster="failsafe"/>
+<!--    <dubbo:reference  id="iHelloService" interface="demo.dubbo.api.IHelloService" protocol="dubbo" check="false" version="1.0.0" cluster="failsafe"  mock="demo.dubbo.mock.HelloServiceMock" timeout="1"/>-->
+    <dubbo:reference  id="iHelloService" interface="demo.dubbo.api.IHelloService" protocol="dubbo" check="false" version="1.0.0" cluster="failsafe"  mock="demo.dubbo.mock.HelloServiceMock" timeout="1"/>
 
 
 
